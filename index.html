@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vision2Voice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        .header, .footer { background: #007BFF; color: white; text-align: center; padding: 20px 0; }
+        .nav { list-style: none; padding: 0; }
+        .nav li { display: inline; margin-right: 20px; }
+        .nav a { color: white; text-decoration: none; }
+        .content { padding: 20px; }
+        .feature { margin-bottom: 20px; }
+        .testimonials, .pricing { background: #F8F9FA; padding: 20px; margin: 20px 0; color: #212529; }
+        form { margin-top: 20px; }
+        label { display: block; margin: 15px 0 5px; }
+        input, select, textarea { display: block; width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        @media (max-width: 600px) {
+            .nav li { display: block; margin-bottom: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul class="nav" aria-label="Main navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Versions</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Vision2Voice</h1>
+        <p>Convert text into natural-sounding speech with our innovative software solution.</p>
+
+        <div class="feature">
+            <h2>Key Features</h2>
+            <p>Advanced customization options empower users to tailor speech output to their needs.</p>
+        </div>
+
+        <div class="pricing">
+            <h2>Pricing Plans</h2>
+            <p>Affordable options that scale with your usage.</p>
+        </div>
+
+        <div class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <p>"Vision2Voice has transformed the way we interact with our content."</p>
+        </div>
+
+        <form>
+            <h2>Contact Us</h2>
+            <label for="category">Category</label>
+            <select id="category" name="category">
+                <option value="sales">Sales</option>
+                <option value="support">Support</option>
+                <option value="general">General Inquiries</option>
+            </select>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>© 2023 Vision2Voice, Inc.</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+    </div>
+</body>
+</html>
